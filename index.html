@@ -11,65 +11,70 @@
     <main>
         <div id="heading">
             <h1 id="title">Console Gaming Survey</h1>
-        <p id="description">Thank you for taking out time to fill this survey</p>
+        <p id="description"><i>Thank you for taking out time to fill this survey</i></p>
         </div>
-        <div id="form">
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
-            <p>fgdfgdgfdg</p><br>
+        <form action="" id="survey-form">
+            <div id="form">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" placeholder="Enter Your Name" type="text" required><br>
+                <label for="email" id="email-label">Email</label>
+                <input id="email" placeholder="Enter your email-id" type="email" required><br>
+                <label for="number" id="number-label" >Age<span style="font-size: 0.7em;"> (Optional)</span></label>
+                <input id="number" placeholder="Enter your age" min="10" max="80" type="number" ><br>
+                <p class="desc">What is your occupation</p>
+                <select name="occp" id="occupation">
+                    <option value="" disabled selected>Select your occupation</option>
+                    <option value="Student">Student</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Freelancer">Freelancer</option>
+                    <option value="Not Say">Prefer not to say</option>
+                </select><br>
+                <p class="desc">What gaming device to you play on</p>
+                <input id="device" type="radio" name="device" value="PS4">
+                <label for="device">PS4</label><br>
+                <input id="device" type="radio" name="device" value="XBOX">
+                <label for="device">XBOX</label><br>
+                <input id="device" type="radio" name="device" value="Nintendo Switch">
+                <label for="device">Nintendo Switch</label><br>
+                <input id="device" type="radio" name="device" value="PS5">
+                <label for="device">PS5</label><br>
+                <input id="device" type="radio" name="device" value="XBOX SX">
+                <label for="device">XBOX SX</label><br>
+                <p class="desc1">Reason for being your preffered platform</p>
+                <select name="platformp" id="dropdown">
+                    <option value="" disabled selected>Choose your reason</option>
+                    <option value="Exclusives">Exclusives</option>
+                    <option value="Pricing">Pricing</option>
+                    <option value="Availablilty">Availablilty</option>
+                    <option value="Specifications">Specifications</option>
+                </select><br>
+                <p class="desc">What improvements do you want to see in the future <span style="font-size: 0.7em;">(Select all that apply)</span></p>
+                <input type="checkbox" id="imprv" name="imprv" value="Connectivity">
+                <label for="imprv">Connectivity</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="Loading Times">
+                <label for="imprv">Loading times</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="UI">
+                <label for="imprv">UI</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="Discounts">
+                <label for="imprv">Discounts</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="Graphics">
+                <label for="imprv">Graphics</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="Community Interaction">
+                <label for="imprv">Community Interaction</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="Cross-Play">
+                <label for="imprv">Cross-Play</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="Sound-Output">
+                <label for="imprv">Sound-Output</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="FPS">
+                <label for="imprv">Consistent FPS</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="4K Video render">
+                <label for="imprv">4K video Rendering</label><br>
+                <input type="checkbox" id="imprv" name="imprv" value="Storage">
+                <label for="imprv">Improved Storage</label><br>
+                <p class="desc1">Any other suggestion or comments ?</p>
+                <textarea name="suggst" id="suggst" placeholder="Suggestions for us"></textarea><br>
+        </form>
+            <button id="submit">Submit</button>
         </div>
         
     </main>

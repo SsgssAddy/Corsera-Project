@@ -3,15 +3,14 @@
     padding: 0;
     overflow-x: hidden;
 }
-
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
     color: linen;
     font-size: 20px;
     text-align: center;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(115deg, hsla(6, 100%, 38%, 0.541), hsla(240, 67%, 30%, 0.7)), url('./images/background.jpg');
+    background-image: linear-gradient(115deg, hsla(240, 67%, 30%, 0.7), hsla(240, 67%, 30%, 0.7)), url('./images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
@@ -22,8 +21,70 @@ body{
 }
 #form{
     background-color: rgba(0, 0, 0, 0.4);
-    max-width: 50%;
+    box-sizing: border-box;
     margin: 20px auto 20px auto;
-    
+    max-width: 55%;
+    border-radius: 20px;
+    text-align: left;
+    padding: 60px 20px 60px 20px;
+}
+input:focus { 
+    outline: none !important;
+    border-color: #10c5dd;
+    box-shadow: 0 0 20px #10c5dd;
+}
+textarea:focus { 
+    outline: none !important;
+    border-color: #10c5dd;
+    box-shadow: 0 0 20px #10c5dd;
+}
+p.desc, #name-label, #email-label, #number-label{
+    padding-left: 60px; 
+} 
+#name, #email, #number, #occupation, #dropdown{
+    display: block;
+    box-sizing: border-box; 
+    justify-content: center;
+    font-family: cursive;
+    font-size: 0.85em;
+    height: 35px;
+    width: 85%;
+    margin: 5px auto;
+}
+#device, #imprv{ 
+    margin: 10px 20px 0 60px;
+    height: 20px;
+    width: 20px;
     
 }
+p.desc1 {
+    padding: 20px 0 0 60px;
+}
+#suggst{
+    display: block;
+    box-sizing: border-box; 
+    justify-content: center;
+    font-family: cursive;
+    font-size: 0.85em;
+    height: 200px;
+    width: 85%;
+    margin: 5px auto;
+}
+#submit{
+    display: block;
+    box-sizing: border-box; 
+    justify-content: center;
+    font-family: cursive;
+    font-size: 0.85em;
+    height: 60px;
+    width: 85%;
+    margin: 5px auto;
+    background-color:green;
+    color: white;
+}
+#submit:hover{
+    background-color: gold;
+    color: black;
+
+}
+
