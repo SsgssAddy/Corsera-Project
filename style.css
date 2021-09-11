@@ -28,6 +28,11 @@ body{
     text-align: left;
     padding: 60px 20px 60px 20px;
 }
+@media screen and (max-width: 992px) {
+#form{
+    max-width: 90%;
+}
+}
 input:focus { 
     outline: none !important;
     border-color: #10c5dd;
