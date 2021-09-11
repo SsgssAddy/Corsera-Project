@@ -12,7 +12,7 @@ body{
     width: 100vw;
     /*background-image: linear-gradient(115deg, hsla(240, 67%, 30%, 0.7), hsla(240, 67%, 30%, 0.7)), url('./images/background.jpg');*/
     background: linear-gradient(-45deg, hsla(14, 24%, 51%, 0.8), hsla(337, 78%, 57%, 0.8), hsla(196, 72%, 49%, 0.8), hsla(166, 72%, 49%, 0.8)),  url('./images/background2.jpg');
-    background-size: 125% 125%;
+    background-size: 150% 150%;
     background-position: center;
     background-attachment: fixed;
     animation: gradient 15s ease-in infinite;
@@ -54,16 +54,25 @@ body{
     max-width: 55%;
     border-radius: 20px;
     text-align: left;
-    padding: 60px 20px 60px 20px;
+    padding: 60px 0 20px 0;
     animation: opc 5s linear 1;
+}
+p.desc, #name-label, #email-label, #number-label{
+    padding-left: 60px; 
+} 
+p.desc1 {
+    padding: 20px 0 0 60px;
 }
 @media screen and (max-width: 992px) {
 #form{
     max-width: 90%;
 }
 p.desc, #name-label, #email-label, #number-label{
-    padding-left: auto; 
+    padding-left: 30px; 
 } 
+p.desc1 {
+    padding: 20px 0 0 30px;
+}
 }
 input:focus { 
     outline: none !important;
@@ -75,9 +84,7 @@ textarea:focus {
     border-color: #10c5dd;
     box-shadow: 0 0 20px #10c5dd;
 }
-p.desc, #name-label, #email-label, #number-label{
-    padding-left: 60px; 
-} 
+
 #name, #email, #number, #occupation, #dropdown{
     display: block;
     box-sizing: border-box; 
@@ -93,9 +100,6 @@ p.desc, #name-label, #email-label, #number-label{
     height: 20px;
     width: 20px;
     
-}
-p.desc1 {
-    padding: 20px 0 0 60px;
 }
 #suggst{
     display: block;
