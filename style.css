@@ -10,10 +10,38 @@ body{
     text-align: center;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(115deg, hsla(240, 67%, 30%, 0.7), hsla(240, 67%, 30%, 0.7)), url('./images/background.jpg');
-    background-size: cover;
+    /*background-image: linear-gradient(115deg, hsla(240, 67%, 30%, 0.7), hsla(240, 67%, 30%, 0.7)), url('./images/background.jpg');*/
+    background: linear-gradient(-45deg, hsla(14, 24%, 51%, 0.8), hsla(337, 78%, 57%, 0.8), hsla(196, 72%, 49%, 0.8), hsla(166, 72%, 49%, 0.8)),  url('./images/background2.jpg');
+    background-size: 125% 125%;
     background-position: center;
-    background-attachment: fixed;  
+    background-attachment: fixed;
+    animation: gradient 15s ease-in infinite;
+    
+}
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes opc {
+    0% {
+		width: 20%;
+        opacity: 0;
+	}
+	50% {
+		width: 60%;
+        opacity: 0.5;
+	}
+	100% {
+		width: 100%;
+        opacity: 1;
+	}
 }
 
 #title{
@@ -27,11 +55,15 @@ body{
     border-radius: 20px;
     text-align: left;
     padding: 60px 20px 60px 20px;
+    animation: opc 5s linear 1;
 }
 @media screen and (max-width: 992px) {
 #form{
     max-width: 90%;
 }
+p.desc, #name-label, #email-label, #number-label{
+    padding-left: auto; 
+} 
 }
 input:focus { 
     outline: none !important;
@@ -84,11 +116,11 @@ p.desc1 {
     height: 60px;
     width: 85%;
     margin: 5px auto;
-    background-color:green;
+    background-color:lime;
     color: white;
 }
 #submit:hover{
-    background-color: gold;
+    background-color: lightseagreen;
     color: black;
 
 }
