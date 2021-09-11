@@ -14,7 +14,7 @@ body{
     background: linear-gradient(-45deg, hsla(14, 24%, 51%, 0.8), hsla(337, 78%, 57%, 0.8), hsla(196, 72%, 49%, 0.8), hsla(166, 72%, 49%, 0.8)),  url('./images/background2.jpg');
     background-size: 150% 150%;
     background-position: center;
-    position: fixed;
+    position: top;
     background-attachment: fixed;
     animation: gradient 15s ease-in infinite;
     
